@@ -1,0 +1,329 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        ```css
+/* Basic CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h2 {
+    color: white;
+    display: inline;
+    margin-right: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: skyblue;
+}
+
+
+/* Common Section */
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+
+/* Hero */
+
+.hero {
+    background-color: #dff6ff;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #222;
+}
+
+.hero h3 {
+    color: #555;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #023e8a;
+}
+
+
+/* Skills */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills div {
+    background-color: white;
+    padding: 25px;
+    width: 100px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+/* Projects */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Contact */
+
+input,
+textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #aaa;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    nav h2 {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+}
+```
+
+     </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Hello, I'm Poojan</h1>
+
+        <h3>Computer Science Student</h3>
+
+        <p>
+            I am learning programming and web development.
+            I enjoy building simple and useful websites.
+        </p>
+
+        <a href="#projects">
+            <button>View My Projects</button>
+        </a>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am a Computer Science student interested in
+            web development and programming.
+        </p>
+
+        <p>
+            Currently, I am learning HTML, CSS and Java.
+        </p>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Java</div>
+            <div>Git</div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Restaurant Website</h3>
+
+                <p>
+                    A simple restaurant website made using HTML and CSS.
+                </p>
+
+                <button>View Project</button>
+            </div>
+
+            <div class="card">
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    My personal portfolio website using HTML and CSS.
+                </p>
+
+                <button>View Project</button>
+            </div>
+
+            <div class="card">
+                <h3>CSS Animation</h3>
+
+                <p>
+                    A small project demonstrating CSS animations.
+                </p>
+
+                <button>View Project</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <section>
+        <h2>Education</h2>
+
+        <h3>B.Tech Computer Science</h3>
+
+        <p>
+            Currently studying Computer Science.
+        </p>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: yourname@gmail.com</p>
+
+        <p>GitHub: github.com/yourusername</p>
+
+        <p>LinkedIn: linkedin.com/in/yourusername</p>
+
+        <form>
+
+            <input type="text" placeholder="Your Name">
+
+            <br><br>
+
+            <input type="email" placeholder="Your Email">
+
+            <br><br>
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <br><br>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Poojan | Built with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
+```
